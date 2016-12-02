@@ -30,6 +30,10 @@ public class IViewPagerListener implements ViewPager.OnPageChangeListener {
         this.mDataTotalLenght = dataTotalLength;
         this.mPointer = pointer;
     }
+	/** 重置数据指针的位置*/
+	public void setPointer(int pointer){
+        this.mPointer = pointer;
+    }
 
     @Override
     public void onPageScrolled(int i, float v, int i1) {
